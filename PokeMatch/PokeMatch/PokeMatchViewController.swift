@@ -8,7 +8,6 @@
 //
 
 import UIKit
-import DeviceKit
 import GoogleMobileAds
 
 // Global Identifier
@@ -38,9 +37,6 @@ class PokeMatchViewController: UIViewController, GADBannerViewDelegate {
     
     // MARK - Local variables
     
-    // Uses DeviceKit to determine device family
-    let device = Device()
-    
     // Time passed to FinalScoreVC
     lazy var gameTimePassed = UILabel()
     
@@ -61,9 +57,9 @@ class PokeMatchViewController: UIViewController, GADBannerViewDelegate {
         print("Reset game screen")
         resetGame()
     }
-        
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad()        
         handleAdRequest()
         
         gameController.delegate = self
@@ -126,10 +122,8 @@ class PokeMatchViewController: UIViewController, GADBannerViewDelegate {
     
     // Sets up for new game
     func setupNewGame() {
-        if device.isPhone {
-            let cardsData: [UIImage] = PokeMemoryGame.topCardImages
-            gameController.newGame(cardsData)
-        } 
+        let cardsData: [UIImage] = PokeMemoryGame.topCardImages
+        gameController.newGame(cardsData)
     }
     
     // Created to reset game. Resets points, time and start button.
@@ -194,7 +188,6 @@ extension PokeMatchViewController: MemoryGameDelegate {
     
     // Animate views for ad placement
     func animateViewsForPlay() {
-        print("\(device)")
         topViewTopConstraint.constant = -80
         
         UIView.animate(withDuration: 0.5, animations: {
