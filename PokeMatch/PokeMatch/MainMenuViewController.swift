@@ -122,23 +122,23 @@ class MainMenuViewController: UIViewController, FBSDKLoginButtonDelegate {
         if FBSDKAccessToken.current() != nil {
             //print permissions, such as public_profile
             print(FBSDKAccessToken.current().permissions)
-            
+
             let graphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields" : "id, name, email"])
             let connection = FBSDKGraphRequestConnection()
-            
+
             connection.add(graphRequest, completionHandler: { (connection, result, error) -> Void in
-                
+
                 let data = result as! [String : AnyObject]
-                
+
                 self.facebookName.text = data["name"] as? String
-                
+
                 let FBid = data["id"] as? String
-                
+
                 let url = NSURL(string: "https://graph.facebook.com/\(FBid!)/picture?type=large&return_ssl_resources=1")
                 self.facebookImage.image = UIImage(data: NSData(contentsOf: url! as URL)! as Data)
-                
+
                 let email = data["email"] as? String
-                
+
                 if email != nil {
                     print("Email: \(String(describing: email))")
                 } else {
@@ -154,23 +154,23 @@ class MainMenuViewController: UIViewController, FBSDKLoginButtonDelegate {
     func handleFacebookImage() {
         facebookImage = UIImageView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
         facebookImage.center = CGPoint(x: view.center.x, y: view.center.y - 100)
-        
+
         facebookImage.image = UIImage(named: "fb_logo")
         facebookImage.materialDesign = true
-        
+
         view.addSubview(facebookImage)
     }
-    
+
     // Facebook name label
     func handleFacebookName() {
         facebookName = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 30))
         facebookName.center = CGPoint(x: view.center.x, y: view.center.y - 65)
-        
+
         facebookName.text = "Not Logged In"
         facebookName.textAlignment = .center
         facebookName.font = UIFont.init(name: "MarkerFelt-Thin", size: 13)
         facebookName.textAlignment = NSTextAlignment.center
-        
+
         view.addSubview(facebookName)
     }
     
@@ -178,22 +178,22 @@ class MainMenuViewController: UIViewController, FBSDKLoginButtonDelegate {
     func facebookLoginButton() {
         let loginButton = FBSDKLoginButton()
         loginButton.readPermissions = ["email"]
-        
+
         loginButton.center = CGPoint(x: view.center.x, y: view.center.y - 30)
         loginButton.delegate = self
-        
+
         view.addSubview(loginButton)
     }
     
     // Facebook Like button
     func facebookLikeButton() {
         let likeButton = FBSDKLikeControl()
-        
+
         likeButton.frame.origin.x = likeButton.frame.width * 0.3
         likeButton.frame.origin.y = (self.view.frame.height - 8) - likeButton.frame.height * 1.5
 
         likeButton.objectID = "https://www.facebook.com/PokeMatchMobileApp/"
-        
+
         view.addSubview(likeButton)
     }
     
@@ -202,12 +202,12 @@ class MainMenuViewController: UIViewController, FBSDKLoginButtonDelegate {
         fetchProfile()
         print("Facebook login complete")
     }
-    
+
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
         facebookImage.image = UIImage(named: "fb_logo")
         facebookName.text = "Not Logged In"
     }
-    
+
     func loginButtonWillLogin(_ loginButton: FBSDKLoginButton!) -> Bool {
         return true
     }
