@@ -9,6 +9,9 @@ use_frameworks!
 pod 'Firebase/Core'
 pod 'Firebase/AdMob'
 pod 'Firebase/Messaging'
+pod 'FBSDKShareKit', '~> 4.26'
+pod 'FBSDKCoreKit', '~> 4.26'
+pod 'FBSDKLoginKit', '~> 4.26'
 
 target 'PokéMatchTests' do
 inherit! :search_paths
