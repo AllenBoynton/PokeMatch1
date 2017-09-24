@@ -5,9 +5,6 @@
 //  Created by Allen Boynton on 5/22/17.
 //  Copyright © 2017 Allen Boynton. All rights reserved.
 //
-//  All content & design © Pokémon Database, 2008-2017. Pokémon images & names © 1995-2017 Nintendo/Game Freak.
-//  https://pokemondb.net/about#privacy
-
 
 import UIKit
 import Firebase

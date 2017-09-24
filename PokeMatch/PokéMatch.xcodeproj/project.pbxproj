@@ -24,6 +24,7 @@
 		090DE5AE1F39508C00E3F981 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090DE5AD1F39508C00E3F981 /* Notifications.swift */; };
 		091FB6451F0EFEF7006CDFAE /* DesignableSwitchColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091FB6441F0EFEF7006CDFAE /* DesignableSwitchColor.swift */; };
 		0930916F1F2588AA006EE157 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930916E1F2588AA006EE157 /* AboutViewController.swift */; };
+		093297FF1F776FF6006FE688 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093297FE1F776FF6006FE688 /* Foundation.framework */; };
 		0935C2ED1F30DAE200AF9AC3 /* HighScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0935C2EC1F30DAE200AF9AC3 /* HighScoreViewController.swift */; };
 		094AEF141ED469CF007FDFC9 /* DesignableImageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094AEF131ED469CF007FDFC9 /* DesignableImageViews.swift */; };
 		094AEF161ED47721007FDFC9 /* DesignableTextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094AEF151ED47721007FDFC9 /* DesignableTextViews.swift */; };
@@ -31,24 +32,14 @@
 		094AEF1E1ED64CA1007FDFC9 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094AEF1D1ED64CA1007FDFC9 /* MainMenuViewController.swift */; };
 		094AEF201ED65732007FDFC9 /* DesignableButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094AEF1F1ED65732007FDFC9 /* DesignableButtons.swift */; };
 		094AEF281ED8FF8F007FDFC9 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094AEF271ED8FF8F007FDFC9 /* GameKit.framework */; };
-		095081BF1F566F4A001EEA67 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 095081BE1F566F4A001EEA67 /* GoogleMobileAds.framework */; };
 		0953F40F1F2945B000BB4426 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 090A22DE1EEDF53C008C3198 /* UserNotifications.framework */; };
-		0990FA4E1F55C85E00E049FA /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0990FA4A1F55C85E00E049FA /* FBSDKCoreKit.framework */; };
-		0990FA4F1F55C85E00E049FA /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0990FA4B1F55C85E00E049FA /* FBSDKLoginKit.framework */; };
-		0990FA501F55C85E00E049FA /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0990FA4C1F55C85E00E049FA /* FBSDKShareKit.framework */; };
 		099274EA1EDC918E002C465A /* PokeMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099274E91EDC918E002C465A /* PokeMemoryGame.swift */; };
 		099274EC1EDC9218002C465A /* PokeVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099274EB1EDC9218002C465A /* PokeVCell.swift */; };
 		099274EF1EDC93FE002C465A /* RandomArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099274EE1EDC93FE002C465A /* RandomArray.swift */; };
 		099274F11EDCA3E9002C465A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099274F01EDCA3E9002C465A /* Card.swift */; };
-		0995BEC41F5719BD0078F0AE /* AccountKitStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0995BEC21F5719BD0078F0AE /* AccountKitStrings.bundle */; };
-		0995BEC61F571C790078F0AE /* AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0995BEC51F571C790078F0AE /* AccountKit.framework */; };
 		09AB400B1F24476E002207D4 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB400A1F24476E002207D4 /* HeaderView.swift */; };
 		09AB400D1F2447A1002207D4 /* DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB400C1F2447A1002207D4 /* DropShadow.swift */; };
-		09B3E8EF1F57A81E003E66B3 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09B3E8EE1F57A81E003E66B3 /* Bolts.framework */; };
 		09B3E8F11F57B799003E66B3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09B3E8F01F57B799003E66B3 /* GoogleService-Info.plist */; };
-		09CA6EB21F578C7D00003886 /* Pods_Poke_Match.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CA6EB11F578C7D00003886 /* Pods_Poke_Match.framework */; };
-		6502FED46C4BDD5937796505 /* Pods_Poke_MatchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3537FA40BB948C16F5568A65 /* Pods_Poke_MatchTests.framework */; };
-		7764AD042A4C30861CF38BFE /* Pods_Poke_MatchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7456FF3A5C1E1503FED41E /* Pods_Poke_MatchUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +97,10 @@
 		0931C9231F775BD600F5D4EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0931C9251F775BE500F5D4EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0931C9261F775BE500F5D4EC /* Poke_MatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poke_MatchUITests.swift; sourceTree = "<group>"; };
+		0931C9271F775E7300F5D4EC /* Pods_Poke_Match.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Poke_Match.framework; path = PokeMatch/Frameworks/Pods_Poke_Match.framework; sourceTree = "<group>"; };
+		0931C92A1F775E7300F5D4EC /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AccountKit.framework; path = PokeMatch/Frameworks/AccountKit.framework; sourceTree = "<group>"; };
+		0931C9421F77623100F5D4EC /* AccountKitStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AccountKitStrings.bundle; path = PokeMatch/Frameworks/AccountKitStrings.bundle; sourceTree = "<group>"; };
+		093297FE1F776FF6006FE688 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0935C2EC1F30DAE200AF9AC3 /* HighScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoreViewController.swift; sourceTree = "<group>"; };
 		094AEF131ED469CF007FDFC9 /* DesignableImageViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableImageViews.swift; sourceTree = "<group>"; };
 		094AEF151ED47721007FDFC9 /* DesignableTextViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableTextViews.swift; sourceTree = "<group>"; };
@@ -113,31 +108,21 @@
 		094AEF1D1ED64CA1007FDFC9 /* MainMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
 		094AEF1F1ED65732007FDFC9 /* DesignableButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButtons.swift; sourceTree = "<group>"; };
 		094AEF271ED8FF8F007FDFC9 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
-		095081BE1F566F4A001EEA67 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		0953F40A1F2944AC00BB4426 /* PokéMatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "PokéMatch.entitlements"; sourceTree = "<group>"; };
-		0990FA4A1F55C85E00E049FA /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		0990FA4B1F55C85E00E049FA /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		0990FA4C1F55C85E00E049FA /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		099274E91EDC918E002C465A /* PokeMemoryGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeMemoryGame.swift; sourceTree = "<group>"; };
 		099274EB1EDC9218002C465A /* PokeVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeVCell.swift; sourceTree = "<group>"; };
 		099274EE1EDC93FE002C465A /* RandomArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomArray.swift; sourceTree = "<group>"; };
 		099274F01EDCA3E9002C465A /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		0995BEC21F5719BD0078F0AE /* AccountKitStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AccountKitStrings.bundle; sourceTree = "<group>"; };
-		0995BEC51F571C790078F0AE /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AccountKit.framework; sourceTree = "<group>"; };
 		0995BECF1F5723F70078F0AE /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		09AB400A1F24476E002207D4 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		09AB400C1F2447A1002207D4 /* DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropShadow.swift; sourceTree = "<group>"; };
-		09B3E8EE1F57A81E003E66B3 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		09B3E8F01F57B799003E66B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		09CA6EB11F578C7D00003886 /* Pods_Poke_Match.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pods_Poke_Match.framework; sourceTree = "<group>"; };
 		09E5BB421F76C2B100DA17FB /* PokéMatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PokéMatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1233BFBB2511DA2A52C5EEA5 /* Pods-PokéMatchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokéMatchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokéMatchTests/Pods-PokéMatchTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3537FA40BB948C16F5568A65 /* Pods_Poke_MatchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Poke_MatchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45BE765F4C66557B322CC257 /* Pods-PokéMatchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokéMatchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokéMatchTests/Pods-PokéMatchTests.release.xcconfig"; sourceTree = "<group>"; };
 		6B7798170FEF2826A858311F /* Pods-PokéMatchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokéMatchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokéMatchUITests/Pods-PokéMatchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		925A799FE99B4328B8E63C25 /* Pods-PokéMatchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokéMatchUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokéMatchUITests/Pods-PokéMatchUITests.release.xcconfig"; sourceTree = "<group>"; };
 		944BBD0725217E4E3D2E2216 /* Pods-PokéMatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokéMatch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokéMatch/Pods-PokéMatch.debug.xcconfig"; sourceTree = "<group>"; };
-		BE7456FF3A5C1E1503FED41E /* Pods_Poke_MatchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Poke_MatchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3B6F52F00A19EC3CD864B6C /* Pods-PokéMatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokéMatch.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokéMatch/Pods-PokéMatch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,7 +131,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6502FED46C4BDD5937796505 /* Pods_Poke_MatchTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,16 +138,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				093297FF1F776FF6006FE688 /* Foundation.framework in Frameworks */,
 				0953F40F1F2945B000BB4426 /* UserNotifications.framework in Frameworks */,
-				0990FA4E1F55C85E00E049FA /* FBSDKCoreKit.framework in Frameworks */,
 				0907CDBF1ED385C800350677 /* AVFoundation.framework in Frameworks */,
-				0990FA501F55C85E00E049FA /* FBSDKShareKit.framework in Frameworks */,
-				0990FA4F1F55C85E00E049FA /* FBSDKLoginKit.framework in Frameworks */,
-				09B3E8EF1F57A81E003E66B3 /* Bolts.framework in Frameworks */,
-				095081BF1F566F4A001EEA67 /* GoogleMobileAds.framework in Frameworks */,
-				0995BEC61F571C790078F0AE /* AccountKit.framework in Frameworks */,
 				094AEF281ED8FF8F007FDFC9 /* GameKit.framework in Frameworks */,
-				09CA6EB21F578C7D00003886 /* Pods_Poke_Match.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,7 +149,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7764AD042A4C30861CF38BFE /* Pods_Poke_MatchUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,20 +279,14 @@
 		0907CDBD1ED385B100350677 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				09B3E8EE1F57A81E003E66B3 /* Bolts.framework */,
-				09CA6EB11F578C7D00003886 /* Pods_Poke_Match.framework */,
+				093297FE1F776FF6006FE688 /* Foundation.framework */,
+				0931C9421F77623100F5D4EC /* AccountKitStrings.bundle */,
+				0931C92A1F775E7300F5D4EC /* AccountKit.framework */,
+				0931C9271F775E7300F5D4EC /* Pods_Poke_Match.framework */,
 				0995BECF1F5723F70078F0AE /* UserNotificationsUI.framework */,
-				0995BEC51F571C790078F0AE /* AccountKit.framework */,
-				0995BEC21F5719BD0078F0AE /* AccountKitStrings.bundle */,
-				095081BE1F566F4A001EEA67 /* GoogleMobileAds.framework */,
-				0990FA4A1F55C85E00E049FA /* FBSDKCoreKit.framework */,
-				0990FA4B1F55C85E00E049FA /* FBSDKLoginKit.framework */,
-				0990FA4C1F55C85E00E049FA /* FBSDKShareKit.framework */,
 				094AEF271ED8FF8F007FDFC9 /* GameKit.framework */,
 				0907CDBE1ED385C800350677 /* AVFoundation.framework */,
 				090A22DE1EEDF53C008C3198 /* UserNotifications.framework */,
-				3537FA40BB948C16F5568A65 /* Pods_Poke_MatchTests.framework */,
-				BE7456FF3A5C1E1503FED41E /* Pods_Poke_MatchUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -471,7 +442,7 @@
 				TargetAttributes = {
 					090135B41F68C283003795F6 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 6GTM24L94G;
+						DevelopmentTeam = 979TTQWNS8;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 0907CD801ED3832D00350677;
 					};
@@ -542,7 +513,6 @@
 			files = (
 				090A22D81EEDEC2C008C3198 /* tenor1.gif in Resources */,
 				0907CD921ED3832D00350677 /* LaunchScreen.storyboard in Resources */,
-				0995BEC41F5719BD0078F0AE /* AccountKitStrings.bundle in Resources */,
 				09B3E8F11F57B799003E66B3 /* GoogleService-Info.plist in Resources */,
 				0907CD8F1ED3832D00350677 /* Assets.xcassets in Resources */,
 				0907CDED1ED4129700350677 /* pokemon.ttf in Resources */,
@@ -569,12 +539,20 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PokéMatch/Pods-PokéMatch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -798,7 +776,7 @@
 			baseConfigurationReference = 1233BFBB2511DA2A52C5EEA5 /* Pods-PokéMatchTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 6GTM24L94G;
+				DEVELOPMENT_TEAM = 979TTQWNS8;
 				INFOPLIST_FILE = "PokéMatchTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alsmobileapps.Poke-MatchTests";
@@ -813,7 +791,7 @@
 			baseConfigurationReference = 45BE765F4C66557B322CC257 /* Pods-PokéMatchTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 6GTM24L94G;
+				DEVELOPMENT_TEAM = 979TTQWNS8;
 				INFOPLIST_FILE = "PokéMatchTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alsmobileapps.Poke-MatchTests";
@@ -953,6 +931,7 @@
 				INFOPLIST_FILE = PokeMatch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abtechapps.PokeMatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -984,6 +963,7 @@
 				INFOPLIST_FILE = PokeMatch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
 				PRODUCT_BUNDLE_IDENTIFIER = com.abtechapps.PokeMatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

@@ -307,7 +307,7 @@
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" identifier="PokeMatchViewController" customClass="SegueFade" customModule="Poke_Match" customModuleProvider="target" id="OQJ-Kf-qXF"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="PokeMatchViewController" id="OQJ-Kf-qXF"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBC-77-zSc" userLabel="Best Times" customClass="DesignableButtons" customModule="Poke_Match" customModuleProvider="target">
@@ -336,7 +336,7 @@
                                     <constraint firstAttribute="height" constant="25" id="Ccq-JD-6ol"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="M7S-Hi-YZD" kind="show" identifier="AboutViewController" customClass="SegueFade" customModule="Poke_Match" customModuleProvider="target" id="YZQ-qr-zgI"/>
+                                    <segue destination="M7S-Hi-YZD" kind="show" identifier="AboutViewController" id="YZQ-qr-zgI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1XK-Hb-U1t" userLabel="MuteButton">
@@ -611,7 +611,7 @@
                         <outlet property="playButton" destination="UD9-oZ-ell" id="hrh-3q-IWZ"/>
                         <outlet property="timerDisplay" destination="fYS-Mw-z0P" id="GlL-Jf-3h1"/>
                         <outlet property="topViewTopConstraint" destination="ab6-kB-Acp" id="RWh-R3-5h7"/>
-                        <segue destination="goU-DA-uO7" kind="show" identifier="HighScoreViewController" customClass="SegueFade" customModule="Poke_Match" customModuleProvider="target" id="ehN-eW-ZDF"/>
+                        <segue destination="goU-DA-uO7" kind="show" identifier="HighScoreViewController" id="ehN-eW-ZDF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
