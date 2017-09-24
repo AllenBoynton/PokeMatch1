@@ -1,0 +1,6 @@
+framework module Pods_Poke_MatchTests {
+  umbrella header "Pods-PokéMatchTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
