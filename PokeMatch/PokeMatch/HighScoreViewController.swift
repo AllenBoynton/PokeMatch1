@@ -169,18 +169,18 @@ class HighScoreViewController: UIViewController, GKGameCenterControllerDelegate,
     // Facebook Share button
     func facebookShareButton() {
         let content = FBSDKShareLinkContent()
-        
+
         content.contentURL = URL(string: "https://www.facebook.com/PokeMatchMobileApp/")
         content.hashtag = FBSDKHashtag(string: "#AlsMobileApps")
-        
+
         FBSDKShareDialog.show(from: self, with: content, delegate: nil)
         FBSDKMessageDialog.show(with: content, delegate: nil)
-        
+
         let shareButton = FBSDKShareButton()
         shareButton.shareContent = content
-        
+
         shareButton.center = CGPoint(x: view.center.x, y: (self.view.frame.height - 40) - shareButton.frame.height * 3.0)
-        
+
         view.addSubview(shareButton)
     }
     
