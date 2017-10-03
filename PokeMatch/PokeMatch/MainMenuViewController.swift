@@ -76,8 +76,7 @@ class MainMenuViewController: UIViewController, FBSDKLoginButtonDelegate {
             } else {
                 // 3. Game center is not enabled on the users device
                 self.gcEnabled = false
-                print("Local player could not be authenticated!")
-                print(error as Any)
+                print(error.debugDescription)
             }
         }
     }
@@ -152,8 +151,9 @@ class MainMenuViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     // Facebook image
     func handleFacebookImage() {
-        facebookImage = UIImageView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        facebookImage = UIImageView(frame: CGRect(x: 0, y: 0, width: 55, height: 55))
         facebookImage.center = CGPoint(x: view.center.x, y: view.center.y - 100)
+        facebookImage.layer.cornerRadius = 10.0
 
         facebookImage.image = UIImage(named: "fb_logo")
         facebookImage.materialDesign = true
@@ -164,7 +164,7 @@ class MainMenuViewController: UIViewController, FBSDKLoginButtonDelegate {
     // Facebook name label
     func handleFacebookName() {
         facebookName = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 30))
-        facebookName.center = CGPoint(x: view.center.x, y: view.center.y - 65)
+        facebookName.center = CGPoint(x: view.center.x, y: view.center.y - 60)
 
         facebookName.text = "Not Logged In"
         facebookName.textAlignment = .center
@@ -200,7 +200,6 @@ class MainMenuViewController: UIViewController, FBSDKLoginButtonDelegate {
     // Facebook login delegate
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
         fetchProfile()
-        print("Facebook login complete")
     }
 
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {

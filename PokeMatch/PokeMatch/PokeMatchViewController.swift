@@ -54,7 +54,6 @@ class PokeMatchViewController: UIViewController, GADBannerViewDelegate {
     lazy var display: String = ""
     
     override func viewWillAppear(_ animated: Bool) {
-        print("Reset game screen")
         resetGame()
     }
     
@@ -86,7 +85,6 @@ class PokeMatchViewController: UIViewController, GADBannerViewDelegate {
     }
     
     func adView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: GADRequestError) {
-        print("Fail to receive ads")
         print(error.debugDescription)
     }
     
@@ -177,7 +175,7 @@ extension PokeMatchViewController: MemoryGameDelegate {
     func memoryGameDidEnd(_ game: PokeMemoryGame, elapsedTime: TimeInterval) {
         timer?.invalidate()
         
-        let when = DispatchTime.now() + 1.5
+        let when = DispatchTime.now() + 1.0
         DispatchQueue.main.asyncAfter(deadline: when) {
             // Your code with delay
             let myVC = self.storyboard?.instantiateViewController(withIdentifier: "HighScoreViewController") as! HighScoreViewController

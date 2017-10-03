@@ -93,7 +93,6 @@ class HighScoreViewController: UIViewController, GKGameCenterControllerDelegate,
             menuButton.isHidden = true
             score = Int(convertStringToNumbers(time: timePassed!)!)
             scoreLabel.text = "\(intToScoreString(score: score))"
-            print("Score Displayed")
             
             if (score > highScore) {
                 highScore = score
@@ -106,7 +105,6 @@ class HighScoreViewController: UIViewController, GKGameCenterControllerDelegate,
             gameTimeImage.isHidden = true
             scoreLabel.isHidden = true
             playAgainButton.isHidden = true
-            print("timePassed = nil")
         }
     }
     
@@ -253,14 +251,12 @@ class HighScoreViewController: UIViewController, GKGameCenterControllerDelegate,
 
         if timePassed != nil {
             saveHighScore(convertStringToNumbers(time: timePassed!)!)
-            print("GC Time: \(convertStringToNumbers(time: timePassed!)!)")
         } else {
             print("Time is nil")
         }
                 
         // Return to game screen
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "PokeMatchViewController")
-        print("Present PokeMatchVC and reset game screen")
         show(vc!, sender: self)
     }
     
