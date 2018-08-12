@@ -25,9 +25,9 @@
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<true/>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true/>
+	<false/>
 	<key>IS_GCM_ENABLED</key>
 	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
@@ -36,5 +36,7 @@
 	<string>1:139325136190:ios:1bfb9f2ceace1412</string>
 	<key>DATABASE_URL</key>
 	<string>https://pokematch-a20e5.firebaseio.com</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-2292175261120907~2981949238</string>
 </dict>
 </plist>

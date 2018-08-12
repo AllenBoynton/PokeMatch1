@@ -28,15 +28,3 @@ import UIKit
         }
     }
 }
-
-//class MatchedViews: UIView {
-//    
-//    // Creates radius corner views
-//    override func awakeFromNib() {
-//        self.layer.cornerRadius = 5.0
-//        self.layer.borderWidth = 2.0
-//        self.layer.borderColor = UIColor(red: 255/255, green: 255/255, blue: 0/255, alpha: 0.8).cgColor
-//        self.clipsToBounds = true
-//    }
-//    
-//}

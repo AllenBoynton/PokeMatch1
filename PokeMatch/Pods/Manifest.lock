@@ -1,76 +1,95 @@
 PODS:
-  - Bolts (1.8.4):
-    - Bolts/AppLinks (= 1.8.4)
-    - Bolts/Tasks (= 1.8.4)
-  - Bolts/AppLinks (1.8.4):
-    - Bolts/Tasks
-  - Bolts/Tasks (1.8.4)
-  - FBSDKCoreKit (4.26.0):
-    - Bolts (~> 1.7)
-  - FBSDKLoginKit (4.26.0):
-    - FBSDKCoreKit
-  - FBSDKShareKit (4.26.0):
-    - FBSDKCoreKit
-  - Firebase/AdMob (4.2.0):
+  - Firebase/AdMob (5.5.0):
     - Firebase/Core
-    - Google-Mobile-Ads-SDK (= 7.24.0)
-  - Firebase/Core (4.2.0):
-    - FirebaseAnalytics (= 4.0.3)
-    - FirebaseCore (= 4.0.7)
-  - Firebase/Messaging (4.2.0):
-    - Firebase/Core
-    - FirebaseMessaging (= 2.0.3)
-  - FirebaseAnalytics (4.0.3):
-    - FirebaseCore (~> 4.0)
-    - FirebaseInstanceID (~> 2.0)
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - Google-Mobile-Ads-SDK (= 7.31.0)
+  - Firebase/Core (5.5.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.1.0)
+  - Firebase/CoreOnly (5.5.0):
+    - FirebaseCore (= 5.1.0)
+  - Firebase/Messaging (5.5.0):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (= 3.1.0)
+  - FirebaseAnalytics (5.1.0):
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.2)
+    - GoogleAppMeasurement (~> 5.1)
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2.0)
+    - GoogleUtilities/MethodSwizzler (~> 5.2.0)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
     - nanopb (~> 0.3)
-  - FirebaseCore (4.0.7):
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
-    - nanopb (~> 0.3)
-  - FirebaseInstanceID (2.0.3)
-  - FirebaseMessaging (2.0.3):
-    - FirebaseAnalytics (~> 4.0)
-    - FirebaseCore (~> 4.0)
-    - FirebaseInstanceID (~> 2.0)
-    - GoogleToolboxForMac/Logger (~> 2.1)
+  - FirebaseCore (5.1.0):
+    - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseInstanceID (3.2.0):
+    - FirebaseCore (~> 5.1)
+    - GoogleUtilities/Environment (~> 5.2)
+  - FirebaseMessaging (3.1.0):
+    - FirebaseCore (~> 5.0)
+    - FirebaseInstanceID (~> 3.0)
+    - GoogleUtilities/Reachability (~> 5.2)
     - Protobuf (~> 3.1)
-  - Google-Mobile-Ads-SDK (7.24.0)
-  - GoogleToolboxForMac/Defines (2.1.1)
-  - GoogleToolboxForMac/Logger (2.1.1):
-    - GoogleToolboxForMac/Defines (= 2.1.1)
-  - GoogleToolboxForMac/NSData+zlib (2.1.1):
-    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - Google-Mobile-Ads-SDK (7.31.0)
+  - GoogleAppMeasurement (5.1.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2.0)
+    - GoogleUtilities/MethodSwizzler (~> 5.2.0)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - GoogleUtilities/AppDelegateSwizzler (5.2.2):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (5.2.2)
+  - GoogleUtilities/Logger (5.2.2):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (5.2.2):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (5.2.2):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (5.2.2)"
+  - GoogleUtilities/Reachability (5.2.2):
+    - GoogleUtilities/Logger
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
-  - Protobuf (3.4.0)
+  - Protobuf (3.6.1)
 
 DEPENDENCIES:
-  - FBSDKCoreKit (~> 4.26)
-  - FBSDKLoginKit (~> 4.26)
-  - FBSDKShareKit (~> 4.26)
   - Firebase/AdMob
   - Firebase/Core
   - Firebase/Messaging
+  - Google-Mobile-Ads-SDK
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseCore
+    - FirebaseInstanceID
+    - FirebaseMessaging
+    - Google-Mobile-Ads-SDK
+    - GoogleAppMeasurement
+    - GoogleUtilities
+    - nanopb
+    - Protobuf
 
 SPEC CHECKSUMS:
-  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
-  FBSDKCoreKit: c8b8582311ec11b145451d8b9717dc6cc2ae5a76
-  FBSDKLoginKit: f3f03b94c21eb834af243c0a881d48641f47ca60
-  FBSDKShareKit: 320712d8293fde6392872c91eb80ef0da5d73cc3
-  Firebase: 9548cae14d69718add12d75a5b312893f7ef89c7
-  FirebaseAnalytics: 76f754d37ca5b04f36856729b6af3ca0152d1069
-  FirebaseCore: 9a6cc1e3eaf75905390f9220596ad4fd8f92faee
-  FirebaseInstanceID: a4fc702b5a026f7322964376047f1a3f1f7cc6ff
-  FirebaseMessaging: eaf1bfff0193170c04ea3ba3bfe983f68f893118
-  Google-Mobile-Ads-SDK: f405b7acb098fe89e6fcd05fdbf400c1a5bcb935
-  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  Firebase: 8c957f9cb3852b519180fb378801b7eeeba4d288
+  FirebaseAnalytics: d4a260c114aec0d765ab5b9c404ac63de1d29381
+  FirebaseCore: ee4b35cf8c8e781da296cc7c15125e4608bb954d
+  FirebaseInstanceID: 8cd2c6cfe7b9ab65ce7e248f6da7f26f6775b9be
+  FirebaseMessaging: f67b3719f520ee200da0e20ce577fe2bce0c01d0
+  Google-Mobile-Ads-SDK: 6e529e748b45507a2ca904e0b5a52669ba3920c4
+  GoogleAppMeasurement: e785bdb86d3d280abc778156cec323a975f11d1d
+  GoogleUtilities: 06b66f9567769a7958db20a92f0128b2843e49d5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
-  Protobuf: 03eef2ee0b674770735cf79d9c4d3659cf6908e8
+  Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
 
-PODFILE CHECKSUM: f0e441a638d17b8f413b6c7f58aa3432c1e43f11
+PODFILE CHECKSUM: e48bfad312440c3af101063741f7bc4e0f74b67e
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.3

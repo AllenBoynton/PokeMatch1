@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03EB723C20930626D3B1132D /* Pods_Poke_MatchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F309E90202BE70300C13612 /* Pods_Poke_MatchTests.framework */; };
 		090281331F028D9E0076DB99 /* DesignableSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090281321F028D9E0076DB99 /* DesignableSegmentControl.swift */; };
 		0907CD851ED3832D00350677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0907CD841ED3832D00350677 /* AppDelegate.swift */; };
 		0907CD8A1ED3832D00350677 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0907CD881ED3832D00350677 /* Main.storyboard */; };
@@ -23,7 +24,6 @@
 		090DE5AA1F38F14A00E3F981 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090DE5A91F38F14A00E3F981 /* Music.swift */; };
 		090DE5AE1F39508C00E3F981 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090DE5AD1F39508C00E3F981 /* Notifications.swift */; };
 		091FB6451F0EFEF7006CDFAE /* DesignableSwitchColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091FB6441F0EFEF7006CDFAE /* DesignableSwitchColor.swift */; };
-		0930916F1F2588AA006EE157 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0930916E1F2588AA006EE157 /* AboutViewController.swift */; };
 		093297FF1F776FF6006FE688 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 093297FE1F776FF6006FE688 /* Foundation.framework */; };
 		0935C2ED1F30DAE200AF9AC3 /* HighScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0935C2EC1F30DAE200AF9AC3 /* HighScoreViewController.swift */; };
 		094AEF141ED469CF007FDFC9 /* DesignableImageViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094AEF131ED469CF007FDFC9 /* DesignableImageViews.swift */; };
@@ -39,7 +39,17 @@
 		099274F11EDCA3E9002C465A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099274F01EDCA3E9002C465A /* Card.swift */; };
 		09AB400B1F24476E002207D4 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB400A1F24476E002207D4 /* HeaderView.swift */; };
 		09AB400D1F2447A1002207D4 /* DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AB400C1F2447A1002207D4 /* DropShadow.swift */; };
-		09B3E8F11F57B799003E66B3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09B3E8F01F57B799003E66B3 /* GoogleService-Info.plist */; };
+		0F309E85202BE70300C13612 /* Pods_Poke_Match.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F309E8F202BE70300C13612 /* Pods_Poke_Match.framework */; };
+		0F309E86202BE70300C13612 /* Pods_Poke_MatchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F309E90202BE70300C13612 /* Pods_Poke_MatchTests.framework */; };
+		0F309E87202BE70300C13612 /* Pods_Poke_MatchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F309E91202BE70300C13612 /* Pods_Poke_MatchUITests.framework */; };
+		0F892862211E595400E59190 /* OptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F892861211E595400E59190 /* OptionsVC.swift */; };
+		0F892866211FD02E00E59190 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F892865211FD02E00E59190 /* Device.swift */; };
+		0F892868211FFDB500E59190 /* DesignableViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F892867211FFDB500E59190 /* DesignableViews.swift */; };
+		0F89286C212092FB00E59190 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0F89286B212092FB00E59190 /* LICENSE */; };
+		0F89286E2120996600E59190 /* StoreKitReviewRequest in Resources */ = {isa = PBXBuildFile; fileRef = 0F89286D2120996600E59190 /* StoreKitReviewRequest */; };
+		0F8928702120A16200E59190 /* StoreReviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F89286F2120A16200E59190 /* StoreReviewHelper.swift */; };
+		0FA4EE622120C61F00090D38 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FA4EE612120C61E00090D38 /* GoogleService-Info.plist */; };
+		ABD556325B079EE7D47614AC /* Pods_Poke_MatchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F309E91202BE70300C13612 /* Pods_Poke_MatchUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +103,6 @@
 		090DE5A91F38F14A00E3F981 /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		090DE5AD1F39508C00E3F981 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		091FB6441F0EFEF7006CDFAE /* DesignableSwitchColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableSwitchColor.swift; sourceTree = "<group>"; };
-		0930916E1F2588AA006EE157 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		0931C9231F775BD600F5D4EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0931C9251F775BE500F5D4EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0931C9261F775BE500F5D4EC /* Poke_MatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poke_MatchUITests.swift; sourceTree = "<group>"; };
@@ -116,8 +125,17 @@
 		0995BECF1F5723F70078F0AE /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		09AB400A1F24476E002207D4 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		09AB400C1F2447A1002207D4 /* DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropShadow.swift; sourceTree = "<group>"; };
-		09B3E8F01F57B799003E66B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		09E5BB421F76C2B100DA17FB /* PokéMatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PokéMatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F309E8F202BE70300C13612 /* Pods_Poke_Match.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Poke_Match.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F309E90202BE70300C13612 /* Pods_Poke_MatchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Poke_MatchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F309E91202BE70300C13612 /* Pods_Poke_MatchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Poke_MatchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F892861211E595400E59190 /* OptionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsVC.swift; sourceTree = "<group>"; };
+		0F892865211FD02E00E59190 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		0F892867211FFDB500E59190 /* DesignableViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableViews.swift; sourceTree = "<group>"; };
+		0F89286B212092FB00E59190 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LICENSE; sourceTree = "<group>"; };
+		0F89286D2120996600E59190 /* StoreKitReviewRequest */ = {isa = PBXFileReference; lastKnownFileType = folder; path = StoreKitReviewRequest; sourceTree = "<group>"; };
+		0F89286F2120A16200E59190 /* StoreReviewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StoreReviewHelper.swift; path = StoreKitReviewRequest/StoreReviewHelper.swift; sourceTree = "<group>"; };
+		0FA4EE612120C61E00090D38 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1233BFBB2511DA2A52C5EEA5 /* Pods-PokéMatchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokéMatchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokéMatchTests/Pods-PokéMatchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		45BE765F4C66557B322CC257 /* Pods-PokéMatchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokéMatchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokéMatchTests/Pods-PokéMatchTests.release.xcconfig"; sourceTree = "<group>"; };
 		6B7798170FEF2826A858311F /* Pods-PokéMatchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokéMatchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokéMatchUITests/Pods-PokéMatchUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03EB723C20930626D3B1132D /* Pods_Poke_MatchTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +157,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F309E85202BE70300C13612 /* Pods_Poke_Match.framework in Frameworks */,
+				0F309E86202BE70300C13612 /* Pods_Poke_MatchTests.framework in Frameworks */,
+				0F309E87202BE70300C13612 /* Pods_Poke_MatchUITests.framework in Frameworks */,
 				093297FF1F776FF6006FE688 /* Foundation.framework in Frameworks */,
 				0953F40F1F2945B000BB4426 /* UserNotifications.framework in Frameworks */,
 				0907CDBF1ED385C800350677 /* AVFoundation.framework in Frameworks */,
@@ -149,6 +171,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABD556325B079EE7D47614AC /* Pods_Poke_MatchUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +187,7 @@
 				094AEF171ED4FB5B007FDFC9 /* DesignableLabels.swift */,
 				094AEF1F1ED65732007FDFC9 /* DesignableButtons.swift */,
 				091FB6441F0EFEF7006CDFAE /* DesignableSwitchColor.swift */,
+				0F892867211FFDB500E59190 /* DesignableViews.swift */,
 			);
 			name = Designables;
 			sourceTree = "<group>";
@@ -192,6 +216,7 @@
 		0907CD831ED3832D00350677 /* PokeMatch */ = {
 			isa = PBXGroup;
 			children = (
+				0F89286D2120996600E59190 /* StoreKitReviewRequest */,
 				0907CDB61ED384EF00350677 /* AppDelegate */,
 				0907CDB81ED3850D00350677 /* Resources */,
 				0907CDB71ED384FE00350677 /* Utilities */,
@@ -201,8 +226,10 @@
 				0907CDBA1ED3852B00350677 /* Controller */,
 				09FD90791F231B7B007098BF /* Protocols */,
 				099274ED1EDC9356002C465A /* Extensions */,
+				0F89286B212092FB00E59190 /* LICENSE */,
 				0931C9221F775BD600F5D4EC /* PokéMatchTests */,
 				0931C9241F775BE500F5D4EC /* PokéMatchUITests */,
+				0F89286F2120A16200E59190 /* StoreReviewHelper.swift */,
 			);
 			path = PokeMatch;
 			sourceTree = "<group>";
@@ -218,7 +245,7 @@
 		0907CDB71ED384FE00350677 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				09B3E8F01F57B799003E66B3 /* GoogleService-Info.plist */,
+				0FA4EE612120C61E00090D38 /* GoogleService-Info.plist */,
 				0907CD931ED3832D00350677 /* Info.plist */,
 			);
 			name = Utilities;
@@ -247,7 +274,7 @@
 		0907CDBA1ED3852B00350677 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0930916E1F2588AA006EE157 /* AboutViewController.swift */,
+				0F892861211E595400E59190 /* OptionsVC.swift */,
 				0935C2EC1F30DAE200AF9AC3 /* HighScoreViewController.swift */,
 				0907CDEA1ED4128500350677 /* PokeMatchViewController.swift */,
 				094AEF1D1ED64CA1007FDFC9 /* MainMenuViewController.swift */,
@@ -272,6 +299,7 @@
 				099274E91EDC918E002C465A /* PokeMemoryGame.swift */,
 				090DE5AD1F39508C00E3F981 /* Notifications.swift */,
 				090DE5A91F38F14A00E3F981 /* Music.swift */,
+				0F892865211FD02E00E59190 /* Device.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -279,6 +307,9 @@
 		0907CDBD1ED385B100350677 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0F309E8F202BE70300C13612 /* Pods_Poke_Match.framework */,
+				0F309E90202BE70300C13612 /* Pods_Poke_MatchTests.framework */,
+				0F309E91202BE70300C13612 /* Pods_Poke_MatchUITests.framework */,
 				093297FE1F776FF6006FE688 /* Foundation.framework */,
 				0931C9421F77623100F5D4EC /* AccountKitStrings.bundle */,
 				0931C92A1F775E7300F5D4EC /* AccountKit.framework */,
@@ -375,8 +406,6 @@
 				090135B11F68C283003795F6 /* Sources */,
 				090135B21F68C283003795F6 /* Frameworks */,
 				090135B31F68C283003795F6 /* Resources */,
-				5036EF406236AB14D1D202E4 /* [CP] Embed Pods Frameworks */,
-				FBE529E910B4873ACF79A064 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -398,7 +427,6 @@
 				0907CD7F1ED3832D00350677 /* Resources */,
 				090A22EF1EEDF53C008C3198 /* Embed App Extensions */,
 				29C82BC9F00EB0CEEFA26C71 /* [CP] Embed Pods Frameworks */,
-				F1987AA2F74907509F7E7DC4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -417,8 +445,6 @@
 				09E5BB3E1F76C2B100DA17FB /* Sources */,
 				09E5BB3F1F76C2B100DA17FB /* Frameworks */,
 				09E5BB401F76C2B100DA17FB /* Resources */,
-				3A0FDCE103F5F8532AEF6D26 /* [CP] Embed Pods Frameworks */,
-				F59DD190C46C8FEEC1A50F22 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -437,7 +463,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Allen Boynton";
 				TargetAttributes = {
 					090135B41F68C283003795F6 = {
@@ -448,7 +474,7 @@
 					};
 					0907CD801ED3832D00350677 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 979TTQWNS8;
+						DevelopmentTeam = 6GTM24L94G;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -513,10 +539,12 @@
 			files = (
 				090A22D81EEDEC2C008C3198 /* tenor1.gif in Resources */,
 				0907CD921ED3832D00350677 /* LaunchScreen.storyboard in Resources */,
-				09B3E8F11F57B799003E66B3 /* GoogleService-Info.plist in Resources */,
 				0907CD8F1ED3832D00350677 /* Assets.xcassets in Resources */,
+				0F89286C212092FB00E59190 /* LICENSE in Resources */,
 				0907CDED1ED4129700350677 /* pokemon.ttf in Resources */,
 				090A22D61EEDEC05008C3198 /* tenor.gif in Resources */,
+				0F89286E2120996600E59190 /* StoreKitReviewRequest in Resources */,
+				0FA4EE622120C61F00090D38 /* GoogleService-Info.plist in Resources */,
 				0907CDEF1ED412A700350677 /* music.mp3 in Resources */,
 				0907CD8A1ED3832D00350677 /* Main.storyboard in Resources */,
 			);
@@ -539,42 +567,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PokéMatch/Pods-PokéMatch-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokéMatch/Pods-PokéMatch-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3A0FDCE103F5F8532AEF6D26 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokéMatchUITests/Pods-PokéMatchUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		49FA7E052B0B92696C6325AB /* [CP] Check Pods Manifest.lock */ = {
@@ -593,21 +598,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5036EF406236AB14D1D202E4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokéMatchTests/Pods-PokéMatchTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8BC0F012C28CC433536E0898 /* [CP] Check Pods Manifest.lock */ = {
@@ -646,51 +636,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F1987AA2F74907509F7E7DC4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokéMatch/Pods-PokéMatch-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F59DD190C46C8FEEC1A50F22 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokéMatchUITests/Pods-PokéMatchUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FBE529E910B4873ACF79A064 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokéMatchTests/Pods-PokéMatchTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -714,12 +659,15 @@
 				090DE5AA1F38F14A00E3F981 /* Music.swift in Sources */,
 				099274EC1EDC9218002C465A /* PokeVCell.swift in Sources */,
 				094AEF161ED47721007FDFC9 /* DesignableTextViews.swift in Sources */,
+				0F892868211FFDB500E59190 /* DesignableViews.swift in Sources */,
 				090DE5A81F37EB1F00E3F981 /* MemoryGameDelegate.swift in Sources */,
 				091FB6451F0EFEF7006CDFAE /* DesignableSwitchColor.swift in Sources */,
+				0F892866211FD02E00E59190 /* Device.swift in Sources */,
 				09AB400D1F2447A1002207D4 /* DropShadow.swift in Sources */,
 				099274EA1EDC918E002C465A /* PokeMemoryGame.swift in Sources */,
+				0F892862211E595400E59190 /* OptionsVC.swift in Sources */,
 				0907CD851ED3832D00350677 /* AppDelegate.swift in Sources */,
-				0930916F1F2588AA006EE157 /* AboutViewController.swift in Sources */,
+				0F8928702120A16200E59190 /* StoreReviewHelper.swift in Sources */,
 				099274EF1EDC93FE002C465A /* RandomArray.swift in Sources */,
 				0935C2ED1F30DAE200AF9AC3 /* HighScoreViewController.swift in Sources */,
 				090281331F028D9E0076DB99 /* DesignableSegmentControl.swift in Sources */,
@@ -815,6 +763,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -822,6 +771,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -874,6 +824,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -881,6 +832,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -920,7 +872,7 @@
 				CODE_SIGN_ENTITLEMENTS = "PokéMatch.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 979TTQWNS8;
+				DEVELOPMENT_TEAM = 6GTM24L94G;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -939,7 +891,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -952,7 +904,7 @@
 				CODE_SIGN_ENTITLEMENTS = "PokéMatch.entitlements";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 979TTQWNS8;
+				DEVELOPMENT_TEAM = 6GTM24L94G;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -970,7 +922,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "PokéMatch-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

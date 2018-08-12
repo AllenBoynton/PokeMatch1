@@ -17,16 +17,16 @@ class PokeMemoryGame {
     
     // iPhone images
     static var topCardImages: [UIImage] = [
-//        UIImage(named: "25")!,
-//        UIImage(named: "6")!,
-//        UIImage(named: "150")!,
-//        UIImage(named: "448")!,
-//        UIImage(named: "94")!,
-//        UIImage(named: "133")!,
-//        UIImage(named: "249")!,
-//        UIImage(named: "257")!,
-//        UIImage(named: "384")!,
-        UIImage(named: "445")!
+        UIImage(named: "25")!/*,
+        UIImage(named: "_6")!,
+        UIImage(named: "_150")!,
+        UIImage(named: "_448")!,
+        UIImage(named: "_94")!,
+        UIImage(named: "_133")!,
+        UIImage(named: "_249")!,
+        UIImage(named: "_257")!,
+        UIImage(named: "_384")!,
+        UIImage(named: "_445")!*/
     ]
 
     // Mark: - ************** Future gen?CardImages **************

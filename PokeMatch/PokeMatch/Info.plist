@@ -33,6 +33,8 @@
 	<string>118504092140757</string>
 	<key>FacebookDisplayName</key>
 	<string>PokéMatch</string>
+	<key>FirebaseScreenReportingEnabled</key>
+	<false/>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
@@ -60,10 +62,6 @@
 	<key>UIStatusBarHidden</key>
 	<false/>
 	<key>UISupportedInterfaceOrientations</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-	</array>
-	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>

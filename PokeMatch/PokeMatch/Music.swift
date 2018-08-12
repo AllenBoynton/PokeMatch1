@@ -23,7 +23,6 @@ class Music {
             bgMusic = try AVAudioPlayer(contentsOf: url)
             bgMusic?.prepareToPlay()
             bgMusic?.play()
-            muteButton?.alpha = 1.0
             bgMusic?.numberOfLoops = -1
         } catch let error as NSError {
             print("audioPlayer error \(error.localizedDescription)")
@@ -35,14 +34,12 @@ extension Music {
     // Pause sound during ads
     func handleMuteMusic() {
         // Pause sound if on
-        if muteButton?.alpha == 1.0 && (bgMusic?.isPlaying)! {
+        if (bgMusic?.isPlaying)! {
             // pauses music
             bgMusic?.pause()
-            muteButton?.alpha = 0.4
             print("Audio muted")
         } else {
             bgMusic?.play()
-            muteButton?.alpha = 1.0
             print("Audio playing")
         }
     }

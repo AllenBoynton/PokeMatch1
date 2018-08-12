@@ -8,53 +8,55 @@
 
 import UIKit
 import GameKit
-import FBSDKShareKit
 import GoogleMobileAds
 
 class HighScoreViewController: UIViewController, GKGameCenterControllerDelegate, GADBannerViewDelegate, GADInterstitialDelegate {
     
-    var music = Music()
-    var pokeMatchViewController = PokeMatchViewController()
+    private var music = Music()
+    private var pokeMatchViewController: PokeMatchViewController!
     
     @IBOutlet weak var gameTimeImage: UIImageView!
     
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var highScoreLbl: UILabel!
     
+    @IBOutlet weak var youWonLabel: UILabel!
     @IBOutlet weak var playAgainButton: UIButton!
     @IBOutlet weak var menuButton: UIButton!
     
     @IBOutlet weak var gcIconView: UIView!
     
-    @IBOutlet weak var adBannerView: GADBannerView!
+    private var adBannerView: GADBannerView!
     
-    lazy var score = Int()
-    lazy var highScore = Int()
+    private var score = Int()
+    private var highScore = Int()
     
-    lazy var minutes = Int()
-    lazy var seconds = Int()
-    lazy var millis = Int()
+    private var minutes = Int()
+    private var seconds = Int()
+    private var millis = Int()
     
     // Time passed from PokeMatchVC
     var timePassed: String?
     
-    lazy var mute = true
+    private var mute = true
     
-    var interstitial: GADInterstitial!
+    private var interstitial: GADInterstitial!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        animateGCIcon()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.interstitial = createAndLoadInterstitial()
-        
+                
         handleAdRequest()
-        animateGCIcon()
+        
         showItems()
         
         checkHighScoreForNil()
         addScore()
-        
-        facebookShareButton()
     }
     
     // Shows items depending on best score screen or final score screen
@@ -105,6 +107,7 @@ class HighScoreViewController: UIViewController, GKGameCenterControllerDelegate,
             gameTimeImage.isHidden = true
             scoreLabel.isHidden = true
             playAgainButton.isHidden = true
+            youWonLabel.isHidden = true
         }
     }
     
@@ -162,35 +165,69 @@ class HighScoreViewController: UIViewController, GKGameCenterControllerDelegate,
         gameCenterViewController.dismiss(animated: true, completion: nil)
     }
     
-    /************************** Facebook Share ************************/
+    /*************************** AdMob Requests ***********************/
     
-    // Facebook Share button
-    func facebookShareButton() {
-        let content = FBSDKShareLinkContent()
-
-        content.contentURL = URL(string: "https://www.facebook.com/PokeMatchMobileApp/")
-        content.hashtag = FBSDKHashtag(string: "#AlsMobileApps")
-
-        FBSDKShareDialog.show(from: self, with: content, delegate: nil)
-        FBSDKMessageDialog.show(with: content, delegate: nil)
-
-        let shareButton = FBSDKShareButton()
-        shareButton.shareContent = content
-
-        shareButton.center = CGPoint(x: view.center.x, y: (self.view.frame.height - 40) - shareButton.frame.height * 3.0)
-
-        view.addSubview(shareButton)
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        if #available(iOS 11.0, *) {
+            // In iOS 11, we need to constrain the view to the safe area.
+            positionBannerViewFullWidthAtBottomOfSafeArea(bannerView)
+        }
+        else {
+            // In lower iOS versions, safe area is not available so we use
+            // bottom layout guide and view edges.
+            positionBannerViewFullWidthAtBottomOfView(bannerView)
+        }
     }
     
-    /*************************** AdMob Requests ***********************/
+    // MARK: - view positioning
+    @available (iOS 11, *)
+    func positionBannerViewFullWidthAtBottomOfSafeArea(_ bannerView: UIView) {
+        // Position the banner. Stick it to the bottom of the Safe Area.
+        // Make it constrained to the edges of the safe area.
+        let guide = view.safeAreaLayoutGuide
+        NSLayoutConstraint.activate([
+            guide.leftAnchor.constraint(equalTo: bannerView.leftAnchor),
+            guide.rightAnchor.constraint(equalTo: bannerView.rightAnchor),
+            guide.bottomAnchor.constraint(equalTo: bannerView.bottomAnchor)
+            ])
+    }
+    
+    func positionBannerViewFullWidthAtBottomOfView(_ bannerView: UIView) {
+        view.addConstraint(NSLayoutConstraint(item: bannerView,
+                                              attribute: .leading,
+                                              relatedBy: .equal,
+                                              toItem: view,
+                                              attribute: .leading,
+                                              multiplier: 1,
+                                              constant: 0))
+        view.addConstraint(NSLayoutConstraint(item: bannerView,
+                                              attribute: .trailing,
+                                              relatedBy: .equal,
+                                              toItem: view,
+                                              attribute: .trailing,
+                                              multiplier: 1,
+                                              constant: 0))
+        view.addConstraint(NSLayoutConstraint(item: bannerView,
+                                              attribute: .bottom,
+                                              relatedBy: .equal,
+                                              toItem: view.safeAreaLayoutGuide.bottomAnchor,
+                                              attribute: .top,
+                                              multiplier: 1,
+                                              constant: 0))
+    }
     
     // Ad request
     func handleAdRequest() {
         let request = GADRequest()
         request.testDevices = [kGADSimulatorID]
         
+        adBannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
+        addBannerViewToView(adBannerView)
+        
         // Ad setup
-        adBannerView.adUnitID = "ca-app-pub-2292175261120907/3388241322"
+        adBannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"//"ca-app-pub-2292175261120907/3388241322"
         adBannerView.rootViewController = self
         adBannerView.delegate = self
         
@@ -221,11 +258,11 @@ class HighScoreViewController: UIViewController, GKGameCenterControllerDelegate,
     
     // Animate GC image
     func animateGCIcon() {
-        UIView.animate(withDuration: 3, animations: {
-            self.gcIconView.transform = CGAffineTransform(scaleX: 50, y: 50)
+        UIView.animate(withDuration: 1.5, animations: {
+            self.gcIconView.transform = CGAffineTransform(scaleX: 30, y: 30)
             self.gcIconView.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         }) { (finished) in
-            UIView.animate(withDuration: 1, animations: {
+            UIView.animate(withDuration: 0.8, animations: {
                 self.gcIconView.transform = CGAffineTransform.identity
             })
         }
@@ -238,13 +275,13 @@ class HighScoreViewController: UIViewController, GKGameCenterControllerDelegate,
     }
     
     // Play again game button to main menu
-    @IBAction func playAgainButtonPressed(_ sender: UIButton) {
+    @IBAction func playAgainButtonPressed(_ sender: Any) {
         // Interstitial Ad setup
         if interstitial.isReady {
             interstitial.present(fromRootViewController: self)
             print("Ad page attempted")
             
-            music.handleMuteMusic()
+//            music.handleMuteMusic()
         } else {
             print("Ad wasn't ready")
         }
